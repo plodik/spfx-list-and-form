@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-listAndFormSample-client-side-solution",
+    "id": "465224BA-39E7-4438-AA52-B8A51D910D90",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "features": [{
+      "title": "SPFX - ListAndFormSample - ListStructure",
+      "description": "Activate this feature to create custom lists needed for running ListAndFormSample",
+      "id": "00b027f3-0171-41a3-bb80-a7f97b9f006f",
+      "version": "1.0.0.0",
+      "assets": {
+        "elementManifests": [
+          "List.CustomList.elements.xml"
+        ],
+        "elementFiles":[
+          "List.CustomList.schema.xml"
+        ]
+      }
+    }]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-listAndFormSample.sppkg"
+  }
+}

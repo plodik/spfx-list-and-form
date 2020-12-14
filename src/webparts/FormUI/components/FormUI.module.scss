@@ -1,0 +1,129 @@
+@import "~office-ui-fabric-react/dist/sass/References.scss";
+
+.FormUI {
+    .container {
+        max-width: 700px;
+        margin: 0px auto;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    }
+    .formHeader {
+        background-color: lightgray;
+        font-family: "Segoe UI";
+    }
+    .title {
+        @include ms-font-xl;
+        @include ms-fontColor-white;
+    }
+    .status {
+        background-color: red;
+        font-size: 16px;
+    }
+    .formLoading {
+        background-color: white;
+    }
+    .alert {
+        background-color: red;
+        font-size: 20px;
+    }
+    .errorMessage {
+        color: red;
+    }
+    .YouAreNotAuthorDiv {
+        background-color: red;
+        padding: 5px;
+    }
+    .YouAreAuthorDiv {
+        background-color: green;
+        color: white;
+        padding: 5px;
+    }
+    .Date {
+        float: left;
+        padding-right: 20px;
+    }
+    .Person_Manager {
+        float: left;
+        padding-right: 20px;
+    }
+    .Person_desc {
+        color: grey;
+        @include ms-font-s;
+    }
+    .ItemType {
+        float: left;
+        padding-right: 20px;
+    }
+    .OurMarker {
+        float: left;
+        padding-right: 20px;
+    }
+    .hidden {
+        display: none;
+    }
+    .floatClearer {
+        clear: both;
+    }
+    .buttonCancel {
+        margin-left: 10px;
+    }
+    .StateDiv {
+        background-color: #cff4fd;
+    }
+    .revokedDiv {
+        background-color: #fdcfcf;
+    }
+    .rejectDiv {
+        background-color: #fdcfcf;
+    }
+    .approveDiv {
+        background-color: #c4fab7;
+    }
+    .rejectedInfoDiv {
+        background-color: #fdcfcf;
+    }
+    .approvalDetailsDiv {
+        background-color: #8fd2ff;
+    }
+    .approvedDiv {
+        background-color: #cff4fd;
+    }
+
+    .subTitle {
+        @include ms-font-l;
+        @include ms-fontColor-white;
+    }
+    .description {
+        @include ms-font-l;
+        @include ms-fontColor-white;
+    }
+    .button {
+        // Our button
+        text-decoration: none;
+        height: 32px; // Primary Button
+        min-width: 80px;
+        background-color: $ms-color-themePrimary;
+        border-color: $ms-color-themePrimary;
+        color: $ms-color-white; // Basic Button
+        outline: transparent;
+        position: relative;
+        font-family: "Segoe UI WestEuropean", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+            sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: $ms-font-size-m;
+        font-weight: $ms-font-weight-regular;
+        border-width: 0;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 16px;
+        .label {
+            font-weight: $ms-font-weight-semibold;
+            font-size: $ms-font-size-m;
+            height: 32px;
+            line-height: 32px;
+            margin: 0 4px;
+            vertical-align: top;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "customitemlistwebpart": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ListUI/ListUIWebPart.js",
+          "manifest": "./src/webparts/ListUI/ListUIWebPart.manifest.json"
+        }
+      ]
+    },
+    "customitemformwebpart": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/FormUI/FormUIWebPart.js",
+          "manifest": "./src/webparts/FormUI/FormUIWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ListUIWebPartStrings": "src/webparts/ListUI/loc/{locale}.js",
+    "FormUIWebPartStrings": "src/webparts/FormUI/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}

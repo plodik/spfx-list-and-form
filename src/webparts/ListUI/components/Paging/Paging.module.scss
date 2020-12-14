@@ -1,0 +1,53 @@
+.paginationContainer {
+    text-align: right;
+    .searchWp__paginationContainer__pagination {
+        display: inline-block;
+        text-align: center;
+
+        ul {
+            display: inline-block;
+            padding-left: 0;
+            border-radius: 4px;
+
+            li {
+                display: inline;
+
+                a {
+                    float: left;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    border-radius: 15px;
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+
+                a:visited {
+                    color: inherit;
+                }
+
+                a.active {
+                    background-color: #0078d7!important;
+                    color: white!important;
+                }
+            }
+
+            li.pageNumber {
+              display: none;
+            }
+            li.prev {
+              display: none;
+            }
+            li.next {
+              display: inline;
+            }
+            li.first {
+              display: inline;
+            }
+            li.last {
+              display: none;
+            }
+        }
+    }
+}
